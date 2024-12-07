@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Интернет-магазин</h1>
+        <p>Лучшие товары!</p>
+    </header>
+    <main>
+        <form action="/submit" method="POST">
+            <div class="product">
+                <img src="https://static.tildacdn.com/tild3632-3334-4538-a464-373665346661/3_1__.jpeg" alt="Product 1" width="150" height="150">
+                <p class="slogan">Удобство и стиль для Вас!</p>
+                <label>
+                    <input type="checkbox" name="product" value="Товар 1"> Товар 1
+                </label>
+            </div>
+            <div class="product">
+                <img src="https://static.tildacdn.com/tild3066-6363-4831-a666-646366336230/2_2__.jpeg" width="150" height="150" alt="Product 2">
+                <p class="slogan">Не упустите шанс, покупайте сейчас!</p>
+                <label>
+                    <input type="checkbox" name="product" value="Товар 2"> Товар 2
+                </label>
+            </div>
+            <div class="product">
+                <img src="https://optim.tildacdn.com/tild6562-3331-4438-b833-643561633032/4_3_1__.jpeg" width="150" height="150" alt="Product 3">
+                <p class="slogan">Лучшее качество по отличной цене!</p>
+                <label>
+                    <input type="checkbox" name="product" value="Товар 3"> Товар 3
+                </label>
+            </div>
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </main>
+</body>
+</html>
